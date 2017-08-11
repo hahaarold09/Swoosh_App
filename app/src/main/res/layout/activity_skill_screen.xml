@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harold.delacerna.com.swoosh_app.SkillScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/beginner_baller_bg" />
+
+    <ImageView
+        android:id="@+id/skillLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="28dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/skillLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp">
+
+            <Button
+                android:id="@+id/btnBeginner"
+                android:onClick="Beginner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/beginner"
+                android:textAllCaps="false"
+                style="@style/Widget.Button.Simple"
+                android:layout_margin="5dp"
+                android:alpha="0.8"/>
+
+            <Button
+                android:id="@+id/btnBaller"
+                android:onClick="Baller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baller"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:alpha="0.8"
+                style="@style/Widget.Button.Simple"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:text=""
+        android:alpha="0.8"
+        android:onClick="finish"
+        style="@style/Widget.Button.Simple"
+        />
+
+
+
+
+</RelativeLayout>

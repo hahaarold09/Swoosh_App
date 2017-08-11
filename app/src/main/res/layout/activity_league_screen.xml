@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harold.delacerna.com.swoosh_app.LeagueScreen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/desired_league_bg" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="28dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <Button
+            android:id="@+id/btnFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mens"
+            android:textAllCaps="false"
+            android:onClick="btn_MEN"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Button.Simple"
+            android:alpha="0.8"
+           />
+        <Button
+            android:id="@+id/btnSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/womens"
+            android:textAllCaps="false"
+            android:onClick="btn_WOMENS"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Button.Simple"
+            android:alpha="0.8"
+         />
+        <Button
+            android:id="@+id/btnThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/co_ed"
+            android:textAllCaps="false"
+            android:onClick="btn_COED"
+            style="@style/Widget.Button.Simple"
+            android:alpha="0.8"
+
+            />
+        <TextView
+            android:id="@+id/tMessageHolder"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am a:"
+            android:textColor="#ffff"
+            android:textAlignment="center"
+            android:visibility="gone"
+
+            />
+        <TextView
+            android:id="@+id/tMessage"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="#ffff"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:text="this is the message"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/Widget.Button.Simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:onClick="next"
+        android:enabled="false"
+        android:text="@string/next"
+        android:alpha="0.5"
+        android:textColor="#ffffff" />
+</RelativeLayout>

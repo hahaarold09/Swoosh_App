@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harold.delacerna.com.swoosh_app.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome_screen_bg" />
+
+    <ImageView
+        android:id="@+id/welcomelogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="28dp"
+        />
+
+    <TextView
+        android:id="@+id/goAllIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_text"
+        android:textColor="#ffff"
+        android:textSize="58sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcomelogo"
+        android:layout_marginTop="47sp"
+
+        />
+    <TextView
+        android:id="@+id/on_going"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sec_text"
+        android:textColor="#ffff"
+        android:textSize="27sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/goAllIn"
+        />
+    <TextView
+        android:id="@+id/findATeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_a_team_in_your_city_dominate_the_league"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/on_going"
+        android:layout_marginTop="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnGETSTART"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:text="@string/get_started"
+        android:onClick="getStarted"
+        android:alpha="0.8"
+        style="@style/Widget.Button.Simple"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
